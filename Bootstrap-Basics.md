@@ -175,8 +175,41 @@ Bootstrap includes several predefined button styles, each serving its own semant
 [Refrences](https://www.w3schools.com/bootstrap/bootstrap_ref_css_helpers.asp)
 
 .text-muted	Text styled with class "text-muted"
+
 .text-success	Text styled with class "text-success"
+
 .bg-info	Table cell is styled with class "bg-info"
- .bg-danger	Table cell is styled with class "bg-danger"
+
+.bg-danger	Table cell is styled with class "bg-danger"
  
  
+### Respnsive Utilities
+[Layoutit](Layoutit.com) Allows for quick layouts
+
+
+### Glyphicons
+[Icon Docs](https://getbootstrap.com/docs/3.3/components/)
+
+Includes over 250 glyphs in font format from the Glyphicon Halflings set.
+
+For performance reasons, all icons require a base class and individual icon class. To use, place the following code just about anywhere. Be sure to leave a space between the icon and text for proper padding.
+
+Icon classes cannot be directly combined with other components. They should not be used along with other classes on the same element. Instead, add a nested `<span>` and apply the icon classes to the `<span>`.
+
+```
+<button type="button" class="btn btn-default" aria-label="Left Align">
+  <span class="glyphicon glyphicon-align-left" aria-hidden="true"></span>
+</button>
+
+<button type="button" class="btn btn-default btn-lg">
+  <span class="glyphicon glyphicon-star" aria-hidden="true"></span> Star
+</button>
+```
+
+```
+<div class="alert alert-danger" role="alert">
+  <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+  <span class="sr-only">Error:</span>
+  Enter a valid email address
+</div>
+```
