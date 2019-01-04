@@ -4,7 +4,7 @@ Navigation available in Bootstrap share general markup and styles, from the base
 
 The base .nav component is built with flexbox and provide a strong foundation for building all types of navigation components. It includes some style overrides (for working with lists), some link padding for larger hit areas, and basic disabled styling.
 
-```
+```html
 <ul id="ss-tabs" class="nav nav-tabs">
   <li class="nav-item">
     <a class="nav-link active" href="#">Active</a>
@@ -34,4 +34,59 @@ JQuery can be used to change the active status for whatever tab is selected
     
   });
 </script>
+```
+
+## Dropdown Menu
+
+```html
+<ul id="ss-tabs" class="nav nav-pills nav-justified">
+  <li class="nav-item">
+    <a class="nav-link active" href="#">Active</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Link</a>
+  </li>
+  <li class="nav-item">
+    <a class="dropdown-toggle" data-toggle="dropdown" href="#">dropdown<span class="caret"></span></a>
+      <ul class="dropdown-menu">
+        <li class="nav-item"><a href="#">item</a></li>
+        <li class="nav-item"><a href="#">item</a></li>
+        <li class="divider"></li>
+        <li class="nav-item"><a href="#">item</a></li>
+      </ul>
+  </li>
+</ul>
+```
+
+## Nav Bar
+
+```html
+<nav class="nav-bar nav-bar-default" role="navigation">
+  <div class="navbar-header">
+    <a class="navbar-brand" href="#">Nav Bar</a>
+  </div>
+<ul id="ss-tabs" class="nav nav-pills nav-justified">
+  <li class="nav-item">
+    <a class="nav-link active" href="#">Active</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Link</a>
+  </li>
+  <li class="nav-item">
+    <a class="dropdown-toggle" data-toggle="dropdown" href="#">dropdown<span class="caret"></span></a>
+      <ul class="dropdown-menu">
+        <li class="nav-item"><a href="#">item</a></li>
+        <li class="nav-item"><a href="#">item</a></li>
+        <li class="divider"></li>
+        <li class="nav-item"><a href="#">item</a></li>
+      </ul>
+  </li>
+</ul>
+</nav>
 ```
