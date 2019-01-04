@@ -153,3 +153,20 @@ Be sure to use an appropriate type attribute on all inputs (e.g., email for emai
 </form>
 
 ```
+
+### Butttons
+[Button Docs](https://getbootstrap.com/docs/4.0/components/buttons/)
+Bootstrap includes several predefined button styles, each serving its own semantic purpose, with a few extras thrown in for more control.
+
+```html
+<button type="button" class="btn btn-lg btn-primary">Primary</button>
+<button type="button" class="btn btn-secondary">Secondary</button>
+<button type="button" class="btn btn-success">Success</button>
+<button type="button" class="btn btn-danger">Danger</button>
+<button type="button" class="btn btn-warning">Warning</button>
+<button type="button" class="btn btn-info">Info</button>
+<button type="button" class="btn btn-light">Light</button>
+<button type="button" class="btn btn-dark">Dark</button>
+
+<button type="button" class="btn btn-link">Link</button>
+```
