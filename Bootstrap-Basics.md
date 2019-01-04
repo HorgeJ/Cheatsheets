@@ -94,10 +94,11 @@ For example, <code>&lt;section&gt;</code> should be wrapped as inline.
 ### Tables
 [Table Docs](https://getbootstrap.com/docs/4.0/content/tables/)
 
-Due to the widespread use of tables across third-party widgets like calendars and date pickers, we’ve designed our tables to be opt-in. Just add the base class .table to any <table>, then extend with custom styles or our various included modifier classes.
+Due to the widespread use of tables across third-party widgets like calendars and date pickers, we’ve designed our tables to be opt-in. Just add the base class .table to any table, then extend with custom styles or our various included modifier classes.
   
   ```html
-<table class="table">
+<div class="table-responsive">
+<table class="table table-bordered table-hover table-condensed table-striped">
   <thead>
     <tr>
       <th scope="col">#</th>
@@ -127,4 +128,5 @@ Due to the widespread use of tables across third-party widgets like calendars an
     </tr>
   </tbody>
 </table>
-  ```
+</div>   
+```
