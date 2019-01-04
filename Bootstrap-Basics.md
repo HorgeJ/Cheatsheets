@@ -23,9 +23,31 @@ Bootstrap’s grid system uses a series of containers, rows, and columns to layo
 * within a logical row the units must add up to 12
 
 * Can use offsets to center data:
-```css
+```html
 <div class="col-lg-4 col-lg-offset-2">
   this is a col-lg-4
 </div>
 ```
 This will shift the cell by two logical units
+
+### Simple Layout
+lg >= 1200px Desktop
+md >= 992px Tablet Landscape
+sm >= 768px Portrait Tablets
+xs < 768px Cell Phones
+
+When the screen pixels fall short of the current screen resultion, the column will wrap around
+
+### Fixed Grids
+using the visible class, elements can be hidden when certain breakpoints are reached
+
+This column will only be visible when greater than or equal to the lg breakpoint
+```html
+<div class="row-md-2 col-md-offset-1 visible-lg">
+```
+
+This column will only be visible when greater than or equal to the md or sm breakpoints. doesnt include xs
+```html
+<div class="row-xs-2 col-md-offset-1 visible-md visible-sm">
+```
+
