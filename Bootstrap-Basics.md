@@ -66,7 +66,9 @@ Lead class makes text appear slighly larger
 
 ### Code
 * Inline code
+```
 Wrap inline snippets of code with <code>. Be sure to escape HTML angle brackets.
+```
   
 ```  
 For example, <section> should be wrapped as inline.
