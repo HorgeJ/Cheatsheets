@@ -231,3 +231,16 @@ Dropdowns are toggleable, contextual overlays for displaying lists of links and 
   </div>
 </div>
 ```
+
+### Button Groups
+[Button Group Docs](https://getbootstrap.com/docs/4.2/components/button-group/)
+
+Group a series of buttons together on a single line with the button group, and super-power them with JavaScript.
+
+```
+<div class="btn-group" role="group" aria-label="Basic example">
+  <button type="button" class="btn btn-secondary">Left</button>
+  <button type="button" class="btn btn-secondary">Middle</button>
+  <button type="button" class="btn btn-secondary">Right</button>
+</div>
+```
