@@ -68,17 +68,22 @@ Lead class makes text appear slighly larger
 * Inline code
 Wrap inline snippets of code with <code>. Be sure to escape HTML angle brackets.
   
+```  
 For example, <section> should be wrapped as inline.
-```html
+```
+  
+```
 For example, <code>&lt;section&gt;</code> should be wrapped as inline.
 ```
 
 * Code Blocks
-Use <pre>s for multiple lines of code. Once again, be sure to escape any angle brackets in the code for proper rendering. You may optionally add the .pre-scrollable class, which will set a max-height of 350px and provide a y-axis scrollbar.
-
+```Use <pre>s for multiple lines of code. Once again, be sure to escape any angle brackets in the code for proper rendering. You may optionally add the .pre-scrollable class, which will set a max-height of 350px and provide a y-axis scrollbar.
+```
+```
 <p>Sample text here...</p>
 <p>And another line of sample text here...</p>
-```html
+```
+```
 <pre><code>&lt;p&gt;Sample text here...&lt;/p&gt;
 &lt;p&gt;And another line of sample text here...&lt;/p&gt;
 </code></pre>
