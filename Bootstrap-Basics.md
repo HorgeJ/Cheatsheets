@@ -170,3 +170,13 @@ Bootstrap includes several predefined button styles, each serving its own semant
 
 <button type="button" class="btn btn-link">Link</button>
 ```
+
+### Helper Classes
+[Refrences](https://www.w3schools.com/bootstrap/bootstrap_ref_css_helpers.asp)
+
+.text-muted	Text styled with class "text-muted"
+.text-success	Text styled with class "text-success"
+.bg-info	Table cell is styled with class "bg-info"
+ .bg-danger	Table cell is styled with class "bg-danger"
+ 
+ 
