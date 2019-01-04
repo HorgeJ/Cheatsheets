@@ -244,3 +244,12 @@ Group a series of buttons together on a single line with the button group, and s
   <button type="button" class="btn btn-secondary">Right</button>
 </div>
 ```
+```
+<div class="btn-group btn-group-sm" data-toggle="buttons">
+  <label class="btn btn-success">
+    Discover
+  <input type="radio" name="paymentOption" value="d">
+  </label>
+</div>
+```
+
