@@ -51,3 +51,15 @@ This column will only be visible when greater than or equal to the md or sm brea
 <div class="row-xs-2 col-md-offset-1 visible-md visible-sm">
 ```
 
+### Typography
+Can use basic headings (H1 - H6)
+
+Lead class makes text appear slighly larger
+```
+<p class="lead"> Hello </p>
+```
+
+**Alignment** can be achieved through classes
+* text-center : Center aligned text
+* text-left : Left aligned text
+* text-right: Right align text
