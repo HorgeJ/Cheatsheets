@@ -64,7 +64,7 @@ JQuery can be used to change the active status for whatever tab is selected
 ## Nav Bar
 
 ```html
-<nav class="nav-bar nav-bar-default" role="navigation">
+<nav class="navbar navbar-default" role="navigation">
   <div class="navbar-header">
     <a class="navbar-brand" href="#">Nav Bar</a>
   </div>
@@ -88,5 +88,44 @@ JQuery can be used to change the active status for whatever tab is selected
       </ul>
   </li>
 </ul>
+</nav>
+```
+
+## Responsive Navbar
+
+Add hamburger to navbar at smaller size
+
+```html
+<nav class="navbar navbar-default" role="navigation">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="#">Nav Bar</a>
+  </div>
+<div class="collapse navbar-collapse" id="nav-collapse">
+<ul id="ss-tabs" class="nav nav-pills nav-justified">
+  <li class="nav-item">
+    <a class="nav-link active" href="#">Active</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Link</a>
+  </li>
+  <li class="nav-item">
+    <a class="dropdown-toggle" data-toggle="dropdown" href="#">dropdown<span class="caret"></span></a>
+      <ul class="dropdown-menu">
+        <li class="nav-item"><a href="#">item</a></li>
+        <li class="nav-item"><a href="#">item</a></li>
+        <li class="divider"></li>
+        <li class="nav-item"><a href="#">item</a></li>
+      </ul>
+  </li>
+</ul>
+  </div>
 </nav>
 ```
