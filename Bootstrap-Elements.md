@@ -240,7 +240,7 @@ A lightweight, flexible component that can optionally extend the entire viewport
 ```
 
 ## Accordion
-```
+```html
 <div class="accordion" id="accordionExample">
   <div class="card z-depth-0 bordered">
     <div class="card-header" id="headingOne">
