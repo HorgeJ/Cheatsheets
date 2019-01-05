@@ -334,3 +334,53 @@ A lightweight, flexible component that can optionally extend the entire viewport
   <strong>Holy guacamole!</strong> You should check in on some of those fields below.
 </div>
 ```
+
+## Progress Bars
+Progress components are built with two HTML elements, some CSS to set the width, and a few attributes. We don’t use the HTML5 progress element, ensuring you can stack progress bars, animate them, and place text labels over them.
+
+* We use the .progress as a wrapper to indicate the max value of the progress bar.
+* We use the inner .progress-bar to indicate the progress so far.
+* The .progress-bar requires an inline style, utility class, or custom CSS to set their width.
+* The .progress-bar also requires some role and aria attributes to make it accessible.
+
+```html
+<div class="progress">
+  <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<div class="progress">
+  <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<div class="progress">
+  <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<div class="progress">
+  <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<div class="progress">
+  <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+```
+
+## Media Objects
+[Place holder images](https://placeholder.com/)
+
+The media object helps build complex and repetitive components where some media is positioned alongside content that doesn’t wrap around said media. Plus, it does this with only two required classes thanks to flexbox.
+
+```html
+<div class="container">
+  <div class="media">
+    <a class="pull-right" href="#">
+      <img class="media-object" src="http://www.placehold.it/80x300" alt="Med Obj">
+    </a>
+     <a class="pull-right" href="#">
+      <img class="media-object" src="http://www.placehold.it/80x300" alt="Med Obj">
+    </a>
+    <div class="media-body">
+      <h3 class="media-heading"> Media Heading (media-heading) </h3>
+      <p>
+        rjegnkrejnfkgjrenkg
+      </p>
+    </div>
+  </div>
+</div>
+```
