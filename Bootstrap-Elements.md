@@ -404,3 +404,10 @@ The media object helps build complex and repetitive components where some media 
 </div>
 ```
 
+## Wells
+The .well class adds a rounded border around an element with a gray background color and some padding:
+```html
+<div class="well well-sm">Small Well</div>
+<div class="well well-lg">Large Well</div>
+```
+
