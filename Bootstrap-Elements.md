@@ -95,8 +95,10 @@ JQuery can be used to change the active status for whatever tab is selected
 
 Add hamburger to navbar at smaller size
 
+This responsive navbar with a fixed top positioning requires adding some padding to the top of the body element to bring the content down
+
 ```html
-<nav class="navbar navbar-default" role="navigation">
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="navbar-header">
     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav-collapse">
       <span class="icon-bar"></span>
