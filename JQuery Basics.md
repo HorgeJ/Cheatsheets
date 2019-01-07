@@ -92,3 +92,62 @@ function float(){
   checked.parent().css("float", right);
 }
 ```
+
+## Asynchronous Requests
+Can be accomplished through JQuery Ajax function
+
+```javascript
+var message = $(#messageToServer).val();
+$.ajax({
+  type:"post",
+  url: "scripts/myServer.php",
+  data: {
+    action: "wait"
+  },
+  success: callback
+});
+```
+
+## Document Ready Function
+ page can't be manipulated safely until the document is "ready." jQuery detects this state of readiness for you. Code included inside $( document ).ready() will only run once the page Document Object Model (DOM) is ready for JavaScript code to execute. Code included inside $( window ).on( "load", function() { ... }) will run once the entire page (images or iframes), not just the DOM, is ready.
+ 
+ syntax:
+ ```
+ // A $( document ).ready() block.
+$( document ).ready(function() {
+    console.log( "ready!" );
+});
+ ```
+ ex:
+ ```javascript
+ $(document).ready(function(){
+  $("#main").append("<p> This line is added after doc is read </p>");
+ });
+ ```
+ 
+ ```javascript
+<script>
+  $( function() {
+    $( "#tabs" ).tabs();
+  } );
+</script>
+ ```
+ 
+ ## Child and Parent Functions
+ 
+ ex. Parents:
+ ```javascript
+ function func(){
+  var input = $("input");
+  input.parent().parents("div.boxStack").addClass("color");
+ }
+ ```
+ 
+ ex. Child:
+ ```javascript
+ var top = $(#first);
+ top.children().addClass("color");
+ ```
+ 
+ 
+ 
