@@ -168,3 +168,71 @@ items.each(function(){
   }
 });
 ```
+
+## Selecting Elements by ID
+
+```javascript
+var items = #("#sidebar");
+highlight(sidebar);
+```
+
+## Selecting by Class
+
+```javascript
+var items = $(".heading");
+highlight(items);
+```
+
+## Selecting by DOM
+
+```javascript
+var items = $(header button);
+highlight(items);
+```
+
+## Selecting Descendant Elements
+
+highlight direct descendant
+```javascript
+var items = $("table > tbody > tr > td");
+highlight(items);
+```
+
+highlight adjacent
+```javascript
+var items = $("td + td");
+highlight(items);
+```
+
+highlight sibling
+```javascript
+var items = $("td ~ td");
+highlight(items);
+```
+
+## Selecting  by Attributes
+
+```javascript
+var items = $("[name='surname']");
+highlight(items);
+```
+
+```javascript
+var items = $("[name]");
+```
+
+```javascript
+var items = $("th[colspan='3']");
+```
+
+## Selecting Attribute Variants
+
+find any variant of attribute value:
+```javascript
+var items = $('[myAttr*="flag"]');
+```
+
+find exact variant of attribute value:
+```
+var items = $("[myAttr~='flag']");
+```
