@@ -55,7 +55,7 @@ The find() method returns descendant elements of the selected element.
 
 A descendant is a child, grandchild, great-grandchild, and so on.
 
-Return all <span> elements that are descendants of <ul>:
+Return all span elements that are descendants of ul:
 ```
   $(document).ready(function(){
   $("ul").find("span").css({"color": "red", "border": "2px solid red"});
