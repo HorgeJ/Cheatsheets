@@ -149,5 +149,22 @@ $( document ).ready(function() {
  top.children().addClass("color");
  ```
  
+ ## Element Selector
+ Selects all elements with the given tag name.
  
- 
+highlight ul:
+```javascript
+var unordered = $("ul");
+highLight(unordered);
+```
+
+check for value "Hello":
+```javascript
+var items = $("input");
+highlight(items);
+items.each(function(){
+  if($(this).val() == "hello"){
+    alert("Hi!!");
+  }
+});
+```
