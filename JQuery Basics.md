@@ -1,4 +1,4 @@
-#JQuery Basics
+# JQuery Basics
 jQuery is a lightweight, "write less, do more", JavaScript library.
 
 The purpose of jQuery is to make it much easier to use JavaScript on your website.
@@ -47,5 +47,48 @@ function func(){
       alert("done!");
     }
   );
+}
+```
+
+## Find Function
+The find() method returns descendant elements of the selected element.
+
+A descendant is a child, grandchild, great-grandchild, and so on.
+
+Return all <span> elements that are descendants of <ul>:
+```
+  $(document).ready(function(){
+  $("ul").find("span").css({"color": "red", "border": "2px solid red"});
+});
+```
+  
+## Filter Function
+The filter() method returns elements that match a certain criteria.
+
+This method lets you specify a criteria. Elements that do not match the criteria are removed from the selection, and those that match will be returned.
+
+Syntax:
+```
+$(selector).filter(criteria,function(index))
+```
+
+ex. turn checked items red:
+```javascript
+function funcRed(){
+  var boxes = $("input");
+  boxes.filter(":checked").parent().addClass("red");
+}
+```
+
+ex. Float checked boxes
+```javascript
+function float(){
+  var labels = $("label input");
+  var checked = labels.filter(function(index){
+    if($(this).filter(":checked").length > 0)
+      return true;
+  });
+  labels.parent().css("float", "left");
+  checked.parent().css("float", right);
 }
 ```
