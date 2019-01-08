@@ -236,3 +236,116 @@ find exact variant of attribute value:
 ```
 var items = $("[myAttr~='flag']");
 ```
+
+## Psuedo Selectors|First and Last
+first:
+```javascript
+var items = $("ul:first");
+```
+
+child:
+```
+var items = $("ul li:first-child")
+```
+
+last:
+```
+var items = $(ul:last)  
+```
+
+odd/even:
+```javascript
+var items = $("ul li:odd");
+```
+
+nth child (not zero based):
+```
+var items = $("ul :nth-child(3)");
+```
+
+## Selecting Children of Query
+```javascript
+var items = $('table');
+var kids = items.find('#theTD');
+highlight(kids)';
+```
+
+# Animations and Colors
+We can use the JQuery CSS function to change colors of elements
+
+```
+var colorArray = ["red", "blue", "yellow"];
+
+function colorFunc(){
+  var p1 = $(".p1");
+  p1.css("color", colorArray[index]);
+  index = (index + 1) % colorArray.length;
+}
+
+```
+
+using interval:
+```
+function intFunc(){
+  window.setInterval(function(){
+  var p1 = $ (".p1");
+  p1.css("background-color", colorArray[index]);
+  index = (index + 1) % colorArray.length;
+  }, 500);
+}
+```
+
+## Animation Queues
+```javascript
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    var div=$("div");
+    div.animate({left:'100px'},slow);
+  });
+  ```
+  
+  ## Animate Colors
+```javascript
+  $("#effect").animate({
+    backgroundColor: "#aa0000",
+    color: "red",
+    width: 500
+  }, 1000);
+});
+```
+
+## Style Changed
+```javascript
+function boxFunc(){
+  $(".boxy").animate({
+    opacity: 0.25,
+    left: "+=50",
+    height: "toggle"
+  }, 5000, function(){
+    $(this).append("</br>done");
+  });
+}
+```
+
+## Stopping an Animation
+```javascript
+$(".boxy").finish();
+```
+
+```javascript
+$(".boxy").stop();
+```
+
+## Slide and Fade
+```
+$("#third").slideUp();
+```
+
+```
+$(".boxy").slideToggle(500);
+```
+
+```
+$(".boxy").fadeOut(3000).delay(800).slideDown(2000);
+```
