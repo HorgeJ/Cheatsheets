@@ -105,3 +105,95 @@ $(content).replaceAll(selector)
 ```
 
 **replaceWith**
+Replaces selected elements with new content
+
+```
+$(selector).replaceWith(content,function(index))
+```
+
+Replace the first p element with new text:
+```javascript
+$("button").click(function(){
+   $("p:first").replaceWith("Hello world!");
+});
+```
+  
+### Clone
+The clone() method makes a copy of selected elements, including child nodes, text and attributes.
+
+Syntax:
+```
+$(selector).clone(true|false)
+```
+
+* true specifies that event handlers should also be copied
+* false Default: Event handlers should not be copied
+
+clone all p elements and insert them at the end of the body element:
+```javascript
+$("button").click(function(){
+  $("p").clone().appendTo("body");
+});
+```
+
+ex:
+```javascript
+$("#box" + count).clone(true)appendTo.(".boxHolder");
+count = (count + 1) % 3;
+```
+
+### Detach | Remove
+**Detach**
+The detach() method removes the selected elements, including all text and child nodes. However, it keeps data and events.
+
+This method also keeps a copy of the removed elements, which allows them to be reinserted at a later time.
+
+Tip: To remove the elements and its data and events, use the remove() method instead.
+
+Tip: To remove only the content from the selected elements, use the empty() method.
+
+syntax:
+```
+$(selector).detach()
+```
+
+ex: remove all p elements
+```javascript
+$("button").click(function(){
+  $("p").detach();
+});
+```
+
+**remove**
+The remove() method removes the selected elements, including all text and child nodes.
+
+This method also removes data and events of the selected elements.
+
+Syntax:
+```
+$(selector).remove(selector);
+```
+
+ex: remove all p elements
+```javascript
+$("button").click(function(){
+  $("p").remove();
+});
+```
+
+ex:
+```javascript
+function func1(){
+  var hold = $("#box1").detach();
+  $("#boxHolder").append(hold);
+}
+
+function func2(){
+  hold = $("#box2").detach();
+  $("#boxHolder").append(hold);
+}
+
+function func3(){
+  $("#boxHolder").empty();
+}
+```
