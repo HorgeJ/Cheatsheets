@@ -162,3 +162,46 @@ $("#project").autocomplete({
   }
 });
 ```
+
+**Autocomplete Scroll**:
+```javascript
+$(function () {
+    var availableTags = [
+        "ActionScript",
+        "AppleScript",
+        "Asp",
+        "BASIC",
+        "C",
+        "C++",
+        "Clojure",
+        "COBOL",
+        "ColdFusion",
+        "Erlang",
+        "Fortran",
+        "Groovy",
+        "Haskell",
+        "Java",
+        "JavaScript",
+        "Lisp",
+        "Perl",
+        "PHP",
+        "Python",
+        "Ruby",
+        "Scala",
+        "Scheme"];
+    $("#tags").autocomplete({
+        source: availableTags
+    });
+
+     $("#tags2").autocomplete({
+        source: availableTags
+    });
+    
+    $("#tags3").autocomplete({
+        source: availableTags
+    });
+    
+    $("#tags2").autocomplete("widget").addClass('fixed-height');
+   $("#tags3").autocomplete("widget").attr('style', 'max-height: 400px; overflow-y: auto; overflow-x: hidden;')
+});
+```
