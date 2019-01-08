@@ -425,3 +425,19 @@ jQuery.post( url [, data ] [, success ] [, dataType ] )
     $("msgToServer").val("");
   }
 ```
+
+**getJSON:**
+```javascript
+$.getJSON("data/jsondata.js", parseData);
+
+function parseData(response){
+  var x = response;
+  try{
+    var data = JSON.stringify(response)
+    $.(".responses").append(data);
+    catch (e){
+      alert("Oops");
+    }
+  }
+}
+```
