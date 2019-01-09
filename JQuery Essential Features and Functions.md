@@ -391,3 +391,38 @@ $(".floated").on("keypress", showKey); //most common
 
 $(document).on("keydown", showKey); // doesnt check to see if holding shift or alt, detects as separate events
 ```
+
+**click()**
+The click event occurs when an element is clicked.
+
+The click() method triggers the click event, or attaches a function to run when a click event occurs.
+
+syntax
+```
+$(selector).click(function)
+```
+
+**change()**
+The change event occurs when the value of an element has been changed (only works on input, textarea and select elements).
+
+The change() method triggers the change event, or attaches a function to run when a change event occurs.
+
+Note: For select menus, the change event occurs when an option is selected. For text fields or text areas, the change event occurs when the field loses focus, after the content has been changed.
+
+syntax:
+```
+$(selector).change(function)
+```
+
+**submit()**
+The submit event occurs when a form is submitted.
+
+This event can only be used on form elements.
+
+The submit() method triggers the submit event, or attaches a function to run when a submit event occurs.
+
+```
+$("form").submit(function(){
+  alert("Submitted");
+});
+```
