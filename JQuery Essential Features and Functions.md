@@ -251,3 +251,14 @@ function func2(){
 }
 ```
 
+**wrapAll**
+The wrapAll() method wraps specified HTML element(s) around all selected elements.
+
+**wrapInner**
+The wrapInner() method wraps specified HTML element(s) around the content (innerHTML) of each selected element.
+
+Syntax:
+```
+$(selector).wrapInner(wrappingElement,function(index))
+```
+
