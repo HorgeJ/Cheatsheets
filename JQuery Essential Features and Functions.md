@@ -262,3 +262,54 @@ Syntax:
 $(selector).wrapInner(wrappingElement,function(index))
 ```
 
+**unwrap**
+The unwrap() method removes the parent element of the selected elements.
+
+Syntax:
+```
+$(selector).unwrap()
+```
+
+remove the parent element of all p elements
+```javascript
+$("button").click(function(){
+  $("p").unwrap();
+});
+```
+
+**val()**
+The val() method returns or sets the value attribute of the selected elements.
+
+When used to return value: 
+This method returns the value of the value attribute of the FIRST matched element.
+
+When used to set value: 
+This method sets the value of the value attribute for ALL matched elements.
+
+Note: The val() method is mostly used with HTML form elements.
+
+Syntax:
+```
+$(selector).val(val)
+```
+
+```javascript
+function func1(){
+  var input = $("input");
+  input.val(2018-10-04);
+}
+
+function func2(){
+  var d = new Date();
+  $("input").val(d.toDateString());
+}
+
+function func3(){
+  var userInput = $("textarea").val();
+  $("select").val(userInput);
+  
+  var text = $("select option:selected").text();
+  $("textarea").val(text);
+}
+
+```
