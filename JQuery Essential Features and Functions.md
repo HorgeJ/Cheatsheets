@@ -323,3 +323,71 @@ function func(){
 }
 ```
 
+## Event Handlers
+
+**on()**
+
+As of jQuery version 1.7, the on() method is the new replacement for the bind(), live() and delegate() methods. This method brings a lot of consistency to the API, and we recommend that you use this method, as it simplifies the jQuery code base.
+
+Note: Event handlers attached using the on() method will work for both current and FUTURE elements (like a new element created by a script).
+
+Tip: To remove event handlers, use the off() method.
+
+Tip: To attach an event that only runs once and then removes itself, use the one() method.
+
+Syntax:
+```
+$(selector).on(event,childSelector,data,function,map);
+```
+
+```javascript
+var items = $("div");
+items.on("click", showType);
+
+$("#table").click(showType)
+
+$("td").first.click();
+```
+
+**off()**
+The off() method is most often used to remove event handlers attached with the on() method.
+
+As of jQuery version 1.7, the off() method is the new replacement for the unbind(), die() and undelegate() methods. This method brings a lot of consistency to the API, and we recommend that you use this method, as it simplifies the jQuery code base. 
+
+Note: To remove specific event handlers, the selector string must match the one passed to the on() method, when the event handler was attached. 
+
+Tip: To attach an event that only runs once and then removes itself, use the one() method.
+
+syntax:
+```
+$(selector).off(event,selector,function(eventObj),map)
+```
+
+```
+$("tr td").off("click");
+
+$("td#theTD").off("click", simpleClick);
+$("td#theTD").off("click", showType);
+
+$("table").off("click", "td", simpleClick); //delegates to td, usefull for elements that are not yet on page. diff from direct
+// remove also needs to match up with this format to correctly remove
+
+$("tr").off("click", "td". simpleClick);
+```
+
+### Capturing Keyboard events
+The order of events related to the keypress event:
+
+* keydown - The key is on its way down
+* keypress - The key is pressed down
+* keyup - The key is released
+
+The keypress() method triggers the keypress event, or attaches a function to run when a keypress event occurs.
+The keypress event is similar to the keydown event. The event occurs when a button is pressed down.
+However, the keypress event is not fired for all keys (e.g. ALT, CTRL, SHIFT, ESC). Use the keydown() method to also check these keys.
+
+```javascript
+$(".floated").on("keypress", showKey); //most common
+
+$(document).on("keydown", showKey); // doesnt check to see if holding shift or alt, detects as separate events
+```
