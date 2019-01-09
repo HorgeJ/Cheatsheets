@@ -39,8 +39,11 @@ includes:
  
 ### Constraints
 Data Integrity can be enforced using these constraints:
-* Primary Key
-* Foreign Key
-* Unique Key
-* Indexes
-* Triggers
+* Primary Key : Not NULL
+* Foreign Key : links tables (primary key from another table)
+* Unique Key  : ensures index key has unique value and each row is unique 
+* Indexes     : used for sorting 
+* Triggers    : SQL statements to provide integrity during table modification
+
+### Table Design
+
