@@ -313,3 +313,13 @@ function func3(){
 }
 
 ```
+
+**hidden**
+makes the element dissapear from that page, height and width will be set to 0, opacity set to 0 and all its attributes will be stored in the jQuery object incase we need to being the object back.
+
+```javascript
+function func(){
+  $("#third").hide
+}
+```
+
