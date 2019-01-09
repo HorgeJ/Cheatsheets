@@ -192,8 +192,62 @@ function func2(){
   hold = $("#box2").detach();
   $("#boxHolder").append(hold);
 }
+```
+**empty**
+REMOVES EVERYTHING
 
+```javascript
 function func3(){
   $("#boxHolder").empty();
 }
 ```
+
+### Getting Values
+***text**
+The text() method sets or returns the text content of the selected elements.
+
+When this method is used to return content, it returns the text content of all matched elements (HTML markup will be removed).
+
+When this method is used to set content, it overwrites the content of ALL matched elements.
+
+Tip: To set or return the innerHTML (text + HTML markup) of the selected elements, use the html() method.
+```
+$(selector).text()
+```
+
+**value**
+The val() method returns or sets the value attribute of the selected elements.
+
+When used to return value:
+This method returns the value of the value attribute of the FIRST matched element.
+
+When used to set value:
+This method sets the value of the value attribute for ALL matched elements.
+
+Note: The val() method is mostly used with HTML form elements.
+
+ex:
+```javascript
+var inputs = $("div.row .hasValue");
+inputs.parent().append(inputs.text());
+
+inputs.each(function(item){
+  $(this).parent().append($(this).val());
+});
+```
+
+### Wrapping
+The wrap() method wraps specified HTML element(s) around each selected element.
+
+```
+function func(){
+  var input = $("div.row .hasValue").first(); // wraps only the first element
+  input.wrap("<div class ='bord'><div>");
+}
+
+function func2(){
+  var input = $("div.row .hasValue");     // wraps all elements
+  input.wrap(<div class='bord'><div>");
+}
+```
+
