@@ -45,5 +45,18 @@ Data Integrity can be enforced using these constraints:
 * Indexes     : used for sorting 
 * Triggers    : SQL statements to provide integrity during table modification
 
-### Table Design
+### Column Design
+A Primary key can be auto generated
+Identity Property: Used to auto increment
+
+Can allow NULLS
+
+Can enter default values to ensure consistancy and can be overwritten by a user
+
+### Relationships
+Should be mapped out and planned before we even get to creating the database 
+
+Types of relationships 
+* one-to-many
+* many-to-many: usually resolved by adding an aditional table
 
