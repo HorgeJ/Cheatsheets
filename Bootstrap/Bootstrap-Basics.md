@@ -196,7 +196,7 @@ For performance reasons, all icons require a base class and individual icon clas
 
 Icon classes cannot be directly combined with other components. They should not be used along with other classes on the same element. Instead, add a nested `<span>` and apply the icon classes to the `<span>`.
 
-```
+```html
 <button type="button" class="btn btn-default" aria-label="Left Align">
   <span class="glyphicon glyphicon-align-left" aria-hidden="true"></span>
 </button>
@@ -206,7 +206,7 @@ Icon classes cannot be directly combined with other components. They should not 
 </button>
 ```
 
-```
+```html
 <div class="alert alert-danger" role="alert">
   <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
   <span class="sr-only">Error:</span>
@@ -219,7 +219,7 @@ Icon classes cannot be directly combined with other components. They should not 
 
 Dropdowns are toggleable, contextual overlays for displaying lists of links and more. They’re made interactive with the included Bootstrap dropdown JavaScript plugin. They’re toggled by clicking, not by hovering; this is an intentional design decision.
 
-```
+```html
 <div class="dropdown">
   <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     Dropdown button
@@ -237,14 +237,14 @@ Dropdowns are toggleable, contextual overlays for displaying lists of links and 
 
 Group a series of buttons together on a single line with the button group, and super-power them with JavaScript.
 
-```
+```html
 <div class="btn-group" role="group" aria-label="Basic example">
   <button type="button" class="btn btn-secondary">Left</button>
   <button type="button" class="btn btn-secondary">Middle</button>
   <button type="button" class="btn btn-secondary">Right</button>
 </div>
 ```
-```
+```html
 <div class="btn-group btn-group-sm" data-toggle="buttons">
   <label class="btn btn-success">
     Discover
@@ -256,7 +256,7 @@ Group a series of buttons together on a single line with the button group, and s
 ### Input Groups
 [Input Groups Docs](https://getbootstrap.com/docs/4.0/components/input-group/)
 
-```
+```html
 <div class="input-group mb-3">
   <div class="input-group-prepend">
     <span class="input-group-text" id="basic-addon1">@</span>
