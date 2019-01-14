@@ -21,7 +21,8 @@ Where you see empty space between blocks of text in your Markdown,
 you will see empty space seperating those blocks of text in your formatted HTML document.
 
 ```
-Type to spaces at the end of a line and return once to start a new line without the space in between the lines of text
+Type to spaces at the end of a line and return once to start a new line  
+without the space in between the lines of text
 ```
 
 I love you without knowing you, or how, or  
@@ -30,3 +31,14 @@ I love you directly without problems or pride:
 I love you like this because I dont know any  
 other way to love
 
+### Emphasis and Bolding
+
+#### Italics
+
+This *word* is in italics
+
+Created by surounding desired italics text in single astrisk
+
+```
+This *word* is in italics
+```
