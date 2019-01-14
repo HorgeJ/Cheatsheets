@@ -34,11 +34,47 @@ other way to love
 ### Emphasis and Bolding
 
 #### Italics
-
-This *word* is in italics
-
 Created by surounding desired italics text in single astrisk
 
+This *word* is in italics
+
 ```
 This *word* is in italics
 ```
+
+#### Bold
+Created by surrounding desired bold text in double astrisks
+
+This **word** is in bold
+
+```
+This **word** is in bold
+```
+
+#### Italics AND Bold
+Done by combining both methods
+
+This ***word*** is in italics and bold
+
+```
+This ***word*** is in italics and bold
+```
+
+### Blockquotes
+Made by using the greater than symbol
+>
+You know how this is:
+if I look
+at the crystal moon, at the red branch
+of the slow autumn at my window,
+if I touch
+near the fire
+the impalpable ash
+or the wrinkled body of the log,
+everything carries me to you,
+as if everything that exists,
+aromas, light, metals,
+were little boats
+that sail
+toward those isles of yours that wait for me.
+>
