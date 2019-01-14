@@ -64,17 +64,16 @@ This ***word*** is in italics and bold
 Made by using the greater than symbol
 
 >You know how this is:
-if I look
-at the crystal moon, at the red branch
-of the slow autumn at my window,
-if I touch
-near the fire
-the impalpable ash
-or the wrinkled body of the log,
-everything carries me to you,
-as if everything that exists,
-aromas, light, metals,
-were little boats
-that sail
-toward those isles of yours that wait for me.
->
+>if I look
+>at the crystal moon, at the red branch
+>of the slow autumn at my window,
+>if I touch
+>near the fire
+>the impalpable ash
+>or the wrinkled body of the log,
+>everything carries me to you,
+>as if everything that exists,
+>aromas, light, metals,
+>were little boats
+>that sail
+>toward those isles of yours that wait for me.
