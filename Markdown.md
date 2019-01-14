@@ -72,3 +72,13 @@ Made by using the greater than symbol
 
 >This is a blockquote
 
+
+### Horizontal Rule
+
+made by using 3 hyphens
+
+```
+---
+```
+
+---
