@@ -36,35 +36,39 @@ other way to love
 #### Italics
 Created by surounding desired italics text in single astrisk
 
+```
+This *word* is in italics
+```
+
 This *word* is in italics
 
-```
-This *word* is in italics
-```
 
 #### Bold
 Created by surrounding desired bold text in double astrisks
 
+```
+This **word** is in bold
+```
+
 This **word** is in bold
 
-```
-This **word** is in bold
-```
 
 #### Italics AND Bold
 Done by combining both methods
 
+```
+This ***word*** is in italics and bold
+```
+
 This ***word*** is in italics and bold
 
-```
-This ***word*** is in italics and bold
-```
 
 ### Blockquotes
 Made by using the greater than symbol
 
+```
+>This is a blockquote
+```
+
 >This is a blockquote
 
-```
->This is a blockquote
-```
