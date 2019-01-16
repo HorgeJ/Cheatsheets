@@ -129,3 +129,14 @@ Links are created by placing the text you want inside square brackets and the li
 [desired text](url)
 ```
 [Link to duckduckgo.com](https://duckduckgo.com/)
+
+
+## Images
+Images are created by placing your alt text in brackets, placing the link to the image in parenthesis and placing an exclamation mark infront of th link
+
+```
+![Place Holder Image](https://placekitten.com/250/400)
+
+```
+
+![Place Holder Image](https://placekitten.com/250/400)
