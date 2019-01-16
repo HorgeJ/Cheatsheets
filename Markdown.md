@@ -95,7 +95,7 @@ Type in a number, followed by a period and a space
 2. Second Item
 
 ### Bulleted List
-Type an astrisk and a space
+Type an astrisk and a space, use a tab for a sublist
 ```
 * 
 * 
