@@ -140,3 +140,11 @@ Images are created by placing your alt text in brackets, placing the link to the
 ```
 
 ![Place Holder Image](https://placekitten.com/250/400)
+
+
+Make a link out of the image to create a link that links to somewhere else 
+```
+[![Place Holder Image](https://placekitten.com/250/400)](google.com)
+```
+
+[![Place Holder Image](https://placekitten.com/250/400)](google.com)
