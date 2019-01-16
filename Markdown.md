@@ -120,3 +120,12 @@ example of block of code:
 ```
 i'm in a block of code!
 ```
+
+
+## Links
+Links are created by placing the text you want inside square brackets and the link in parenthesis
+
+```
+[desired text](url)
+```
+[Link to duckduckgo.com](https://duckduckgo.com/)
