@@ -82,3 +82,14 @@ made by using 3 hyphens
 ```
 
 ---
+
+## Lists
+
+### Ordered Lists
+Type in a number, followed by a period and a space
+```
+1. 
+```
+
+1. First Items
+2. Second Item
