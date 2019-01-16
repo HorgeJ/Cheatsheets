@@ -106,3 +106,17 @@ Type an astrisk and a space, use a tab for a sublist
  * Another item
    * Sub list item
    * Again
+
+---
+
+## Code
+Formatting code is done using the back tick for inline code and three back ticks for a code block
+```
+`inline code`
+```
+example of `inline code`
+
+example of block of code:
+```
+i'm in a block of code!
+```
