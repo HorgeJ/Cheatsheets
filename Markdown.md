@@ -104,5 +104,5 @@ Type an astrisk and a space, use a tab for a sublist
 ```
  * List Item
  * Another item
-  * Sub list item
-  * Again
+   * Sub list item
+   * Again
