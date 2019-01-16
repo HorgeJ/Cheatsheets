@@ -91,5 +91,14 @@ Type in a number, followed by a period and a space
 1. 
 ```
 
-1. First Items
+1. First Item
 2. Second Item
+
+### Bulleted List
+Type an astrisk and a space
+```
+* 
+* 
+  *
+  *
+```
