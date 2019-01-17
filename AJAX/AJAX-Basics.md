@@ -75,10 +75,11 @@ Returns the status-text (e.g. "OK" or "Not Found")
 ## Modifying the DOM
 Using JavaScript to manipulate the DOM we can add content to elements
 
-```
-<div id="update"> </div>
-
 ```javascript
+<div id="update"> 
+    <!-- AJAX CONTENT GOES HERE -->
+</div>
+
 <script>
     var request = new XMLHttpRequest();
     request.open('GET', 'data.txt', true);
@@ -90,7 +91,5 @@ Using JavaScript to manipulate the DOM we can add content to elements
     request.send();
     }
   </script>
-```
-
 ```
 
