@@ -7,7 +7,7 @@ AJAX allows web pages to be updated asynchronously by exchanging data with a web
 3. Open a request (provide the METHOD and URL)
 4. Send the request
 
-### Creating a request
+## Creating a request
 **The XMLHttpRequest Object**
 The XMLHttpRequest object can be used to exchange data with a web server behind the scenes. This means that it is possible to update parts of a web page, without reloading the whole page.
 
@@ -18,7 +18,7 @@ variable = new XMLHttpRequest();
 
 ex: 
 ```javascript
-var xhr = new XMLHttpRequest(); 
+var request = new XMLHttpRequest(); 
 ```
 
 **onreadystatechange**
@@ -61,11 +61,36 @@ Returns the status-text (e.g. "OK" or "Not Found")
 ```javascript
 <script>
     var request = new XMLHttpRequest();
-    request.open('GET', 'data.txt', false);
+    request.open('GET', 'data.txt', true);
+    request.onreadystatechange = function(){
+      if((request.readyState === 4) && (request.status === 200)){
+        console.log(request);
+        document.writeln(request.responseText);
+    }
     request.send();
-    if(request.status === 200){
-      console.log(request);
-      document.writeln(request.responseText);
     }
   </script>
 ```
+
+## Modifying the DOM
+Using JavaScript to manipulate the DOM we can add content to elements
+
+```
+<div id="update"> </div>
+
+```javascript
+<script>
+    var request = new XMLHttpRequest();
+    request.open('GET', 'data.txt', true);
+    request.onreadystatechange = function(){
+      if((request.readyState === 4) && (request.status === 200)){
+        var modify = document.getElementById('update'); // targets our div
+        modify.innerHTML = request.responseText;
+    }
+    request.send();
+    }
+  </script>
+```
+
+```
+
