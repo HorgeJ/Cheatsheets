@@ -96,5 +96,5 @@ Using JavaScript to manipulate the DOM we can add content to elements
   </script>
 ```
 
-### Modifying by Class
+### Modifying Elements
 
