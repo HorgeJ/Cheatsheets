@@ -98,3 +98,32 @@ Using JavaScript to manipulate the DOM we can add content to elements
 
 ### Modifying Elements
 
+```javascript
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+
+<script>
+    var request = new XMLHttpRequest();
+    request.open('GET', 'data.txt', true);
+    request.onreadystatechange = function(){
+      if((request.readyState === 4) && (request.status === 200)){
+        var modify = document.getElementsByTagName('li'); // targets our div
+        modify.innerHTML = request.responseText;
+    }
+    request.send();
+    }
+  </script>
+```
+
+
+
+
+
+
+
+
