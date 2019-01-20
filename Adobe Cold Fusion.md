@@ -18,3 +18,7 @@ or:
   WriteOutput(greeting);
 </cfscript>
 ```
+
+### Variables
+Colfusion is not a strongly typed language so a type does not need to be specified before declaring a variable.
+
