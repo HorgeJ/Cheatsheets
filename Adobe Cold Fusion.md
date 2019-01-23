@@ -37,4 +37,15 @@ There are two tpyes of variables:
 * Simple: String, Numeric, Boolean and DateTime
 * Complex: Structs, Arrays, Queries and Images
 
-  
+### Strings
+In ColdFusion, a string is a quote ( ' or " ) followed by zero or more letters, numbers, or symbols, and followed by another quote ( ' or " ). For example:
+
+```coldfusion
+<cfscript>
+       myString="That's one small step for man, one giant leap for mankind.";
+       myStringLen=Len(myString);
+       WriteOutput(myStringLen);  //would output 58, the length of the string
+</cfscript>
+```
+
+### Arrays
