@@ -49,3 +49,18 @@ In ColdFusion, a string is a quote ( ' or " ) followed by zero or more letters, 
 ```
 
 ### Arrays
+In ColdFusion, you can create arrays explicitly, by using a function to declare the array and then assigning it data, or implicitly by using an assignment statement. You can create simple or complex, multidimensional arrays.
+
+[Additonal coldfusion array functions](https://helpx.adobe.com/coldfusion/cfml-reference/coldfusion-functions/functions-by-category/array-functions.html)
+
+To create an array, first create an array object using the ArrayNew function. 
+
+Example:
+```coldfusion
+<cfscript>
+   myArray = [];
+   myArray=[0,1,1,2,3,5,8,13,21];
+</cfscript>
+```
+The example creates an array object for a one-dimensional array and then populates the array with the Fibonacci series.
+
