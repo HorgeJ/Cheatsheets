@@ -64,3 +64,18 @@ Example:
 ```
 The example creates an array object for a one-dimensional array and then populates the array with the Fibonacci series.
 
+### Lists
+A list in ColdFusion is a string with delimiters.
+
+[Additional List functions](https://helpx.adobe.com/coldfusion/cfml-reference/coldfusion-functions/functions-by-category/list-functions.html)
+
+A delimiter separates each item in the list. For example: myList="a,b,c,d,e";
+
+```coldfusion
+<cfscript>
+       myList="Tokyo,Bangkok,Jakarta,Manila,Bangalore,Shanghai";
+       WriteOutput(ListLast(myList)); //Outputs the last element in the list, Shanghai
+</cfscript>
+```
+
+### Structs
