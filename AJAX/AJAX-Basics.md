@@ -116,28 +116,6 @@ Returns the status-text (e.g. "OK" or "Not Found")
 </html>
 ```
 
-## Modifying the DOM
-Using JavaScript to manipulate the DOM we can add content to elements
-
-### Modifying by ID
-```javascript
-<div id="update">
-    <!-- AJAX CONTENT GOES HERE -->
-</div>
-
-<script>
-    var request = new XMLHttpRequest();
-    request.open('GET', 'data.txt', true);
-    request.onreadystatechange = function(){
-      if((request.readyState === 4) && (request.status === 200)){
-        var modify = document.getElementById('update'); // targets our div
-        modify.innerHTML = request.responseText;
-    }
-    request.send();
-    }
-  </script>
-```
-
 ### AJAX Callbacks
 
 ```
@@ -160,7 +138,7 @@ Value: Double Quotes
 
 ```JSON
 {
-    "name": "Jim", //Property:Value
+    "name": "Jim",
     "phone": "555-555-5555"
 }
 ```
@@ -179,30 +157,89 @@ console.log(obj.result);
 // expected output: true
 ```
 
-### Modifying Elements
-
 ```javascript
-    <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-    </ul>
-
-<script>
-    var request = new XMLHttpRequest();
-    request.open('GET', 'data.txt', true);
-    request.onreadystatechange = function(){
-      if((request.readyState === 4) && (request.status === 200)){
-        var modify = document.getElementsByTagName('li'); // targets our div
-        modify.innerHTML = request.responseText;
+var xhr = new XMLHttpRequest();
+xhr.onreadystatechange = function() {
+	if(xhr.readyState === 4){
+  	var employees = JSON.parse(xhr.responseText)
+	console.log(typeOf employees);
+	console.log(employees);
     }
-    request.send();
-    }
-  </script>
+  }
+};
+xhr.open('GET', 'sidebar.html');
+xhr.send();
 ```
 
+Now: JSON is in usable JS
+
+```javascript
+var xhr = new XMLHttpRequest();
+xhr.onreadystatechange = function() {
+  if(xhr.readyState === 4){
+    var employees = JSON.parse(xhr.responseText);
+    var statusHTML = '<ul class="bulleted">';
+    for ( var i = 0; i < employees.length; i++){
+      if(employees[i].inoffice === true){
+        statusHTML += '<li class="in">';
+      } else {
+        statusHTML += '<li class="out">';
+      }
+      statusHTML += employees[i].name;
+      statusHTML += '</li>';
+    }
+    statusHTML += '</ul>';
+    document.getElementById('employeeList').innerHTML = statusHTML;
+  }
+};
+
+xhr.open('GET', 'data/employees.json');
+xhr.send();
+```
+
+```html
+<aside class="grid-30 list">
+    <h2>Employee Office Status</h2>
+     <div id="employeeList">
+
+     </div>
+</aside>
+```
+
+## Modifying the DOM
+Using JavaScript to manipulate the DOM we can add content to elements
+
+
+### AJAX with JQuery
+.load() loads content onto an element on the page
+
+#### GET method
+```
+var callback = function(response){
+	// do something with data
+}
+
+$.get(url, data (optional in Query String), callback)
+```
+
+```javascript
+$(document).ready(function () {
+  var url = "../data/employees.json";
+  $.getJSON(url, function(response){
+    var statusHTML = '<ul class="bulleted">';
+    $.each(response, function(index, employee) {
+      if(employee.inoffice === true){
+        statusHTML += '<li class = "in">';
+      } else {
+        statusHTML += '<li class = "out">';
+      }
+      statusHTML += employee.name + '</li>';
+    }); // end each
+    statusHTML += '</ul>';
+    $('#employeeList').html(statusHTML);
+  }); // end getJSON
+}); //end ready
+```
 
 
 
