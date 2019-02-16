@@ -42,3 +42,25 @@ The input element is used to create many different types of form controls. The t
   * The form-handler is typically a server page with a script for processing the input data.
   * The form-handler is specified in the form's action attribute.
 
+### Organizing Forms
+
+Add label element to give fields context
+The label attribute associates the label with a form element by ID
+
+```html
+<form action="URL" method="post">
+  <label for="name">Name:</label>
+  <input type="text "name="name" id="user_name">
+  
+  <label for="mail">Email:</label>
+  <input type="email" name"user_email" id="mail">
+  
+  <label for="password">Password:</label>
+  <input type="password" name="user_password"  id="password">
+
+  <label for="bio">Biography:</label>
+  <textarea id="bio" name="user_bio"></textarea>
+  
+  <button type="submit">Sign Up</button>
+</form>
+```
