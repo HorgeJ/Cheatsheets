@@ -74,6 +74,48 @@ Returns the status-text (e.g. "OK" or "Not Found")
   </script>
 ```
 
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link href='//fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/main.css">
+  <title>AJAX with JavaScript</title>
+  <script>
+    var xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function(){ // Our call back function
+      if(xhr.readyState === 4){           // If readuState is 4 (success) then place our response in DIV
+        document.getElementById('ajax').innerHTML=xhr.responseText;
+      }
+    xhr.open('GET', 'sidebar.html'); // 3. Open the Request
+    function sendAJAX(){
+          xhr.send(); // send the request
+      document.getElementById('load').style.display="none";
+      }
+    };
+  </script>
+</head>
+<body>
+  <div class="grid-container centered">
+    <div class="grid-100">
+      <div class="contained">
+        <div class="grid-100">
+          <div class="heading">
+            <h1>Bring on the AJAX</h1>
+            <button id="load" onclick="sendAJAX()">Send me AJAX!</button>
+          </div>
+          <div id="ajax">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+```
+
 ## Modifying the DOM
 Using JavaScript to manipulate the DOM we can add content to elements
 
