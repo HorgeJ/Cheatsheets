@@ -24,12 +24,21 @@ On successful creation, return HTTP status 201, returning a Location header with
 The input element is used to create many different types of form controls. The type attribute specifies what kind of form control should be rendered, such as text, email, passwords, and more. The name attribute is submitted with form data so that server-side code can parse the information.
 
 ```html
-<input type="text "name="name" id="user_name">
-<input type="email" name"mail" id=""user_email>
-<input type="password" name="password"  id="user_password"
+<form action="URL" method="post">
+  <input type="text "name="name" id="user_name">
+  <input type="email" name"mail" id=""user_email>
+  <input type="password" name="password"  id="user_password">
+
+  <textarea id="bio" name="user_bio"></textarea>
+  
+  <button type="submit">Sign Up</button>
+</form>
 ```
 
 * type: the type of input
 * name: needed for when the form is submited the server side code and processess it
 * id: useful for targeting with JS
+* submit: The <input type="submit"> defines a submit button which submits all form values to a form-handler.
+  * The form-handler is typically a server page with a script for processing the input data.
+  * The form-handler is specified in the form's action attribute.
 
