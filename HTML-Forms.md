@@ -67,3 +67,5 @@ The label attribute associates the label with a form element by ID
 
 
 ### Fieldsets and Legends
+The fieldset tag is used to group related elements in a form.
+The fieldset tag draws a box around the related elements.
