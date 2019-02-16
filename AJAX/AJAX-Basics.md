@@ -138,6 +138,47 @@ Using JavaScript to manipulate the DOM we can add content to elements
   </script>
 ```
 
+### AJAX Callbacks
+
+```
+var xhr = new XMLHttpRequest();
+xhr.onreadystatechange = function() {
+	if(xhr.readyState === 4){
+  	if(xhr.status === 200){
+    	document.getElementById('sidebar').innerHTML=xhr.responseText
+    }
+  }
+};
+xhr.open('GET', 'sidebar.html');
+xhr.send();
+```
+
+### Intro to JSON
+Key: Double Quotes
+Value: Double Quotes
+
+
+```JSON
+{
+    "name": "Jim", //Property:Value
+    "phone": "555-555-5555"
+}
+```
+
+### Parsin JSON Data
+The **JSON.parse()** method parses a JSON string, constructing the JavaScript value or object described by the string. An optional reviver function can be provided to perform a transformation on the resulting object before it is returned.
+
+```
+var json = '{"result":true, "count":42}';
+obj = JSON.parse(json);
+
+console.log(obj.count);
+// expected output: 42
+
+console.log(obj.result);
+// expected output: true
+```
+
 ### Modifying Elements
 
 ```javascript
